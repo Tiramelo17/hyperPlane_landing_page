@@ -6,6 +6,7 @@ import './styles.css';
 const contactEmail = 'melotechsolu@gmail.com';
 const phoneNumber = '31989797199';
 const whatsappUrl = 'https://wa.link/553qkl';
+const logoSrc = '/brand/logo.jpeg';
 
 const services = [
   {
@@ -15,30 +16,25 @@ const services = [
   },
   {
     icon: Gauge,
-    title: 'Menor custo por resultado',
-    description: 'Otimizamos arquitetura, inferência e integrações para reduzir dependência de modelos caros sem perder qualidade.',
+    title: 'Custo controlado por decisão',
+    description: 'Reduzimos dependência de modelos caros com arquitetura, roteamento e inferência no tamanho certo.',
   },
   {
     icon: BarChart3,
-    title: 'Dados mais úteis para decisão',
-    description: 'Tratamos dados, métricas e validação para transformar processos dispersos em sinais confiáveis.',
+    title: 'Dados prontos para ação',
+    description: 'Tratamos métricas, fontes e validação para transformar operações dispersas em sinais confiáveis.',
   },
   {
     icon: Zap,
-    title: 'Velocidade com entrega sólida',
-    description: 'Construímos soluções enxutas, testáveis e ajustadas ao cenário real de cada operação.',
+    title: 'Protótipos que viram operação',
+    description: 'Construímos soluções enxutas, mensuráveis e preparadas para evoluir depois da primeira entrega.',
   },
 ];
 
 const processSteps = ['Diagnóstico técnico e de negócio', 'Protótipo validado com dados reais', 'Otimização de custo e latência', 'Entrega, acompanhamento e evolução'];
 
-function LogoMark({ className = '' }: { className?: string }) {
-  return (
-    <svg className={className} viewBox="0 0 64 64" role="img" aria-label="Logo HyperPlane AI">
-      <path className="logo-plane" d="M10 42L28 10h26L36 54H10l18-12h18" />
-      <path className="logo-axis" d="M21 32h25M32 18v28" />
-    </svg>
-  );
+function BrandLogo({ className = '' }: { className?: string }) {
+  return <img className={className} src={logoSrc} alt="Logo HyperPlane AI" />;
 }
 
 function App() {
@@ -48,7 +44,7 @@ function App() {
     <main>
       <header className="site-header" aria-label="Cabeçalho principal">
         <a className="brand" href="#top" aria-label="HyperPlane AI">
-          <LogoMark className="brand-logo" />
+          <BrandLogo className="brand-logo" />
           <span>HyperPlane AI</span>
         </a>
         <nav className="desktop-nav" aria-label="Navegação principal">
@@ -75,21 +71,18 @@ function App() {
         <div className="hero-content">
           <div className="eyebrow">
             <Sparkles size={16} />
-            IA e Machine Learning real para empresas
+            IA, dados e automação com padrão de engenharia
           </div>
-          <div className="hero-brand-lockup" aria-hidden="true">
-            <LogoMark className="hero-logo" />
-          </div>
+          <BrandLogo className="hero-logo" />
           <h1 className="hero-title">
-            <span>HyperPlane</span>
-            <span>AI</span>
+            IA que entrega resultado.
           </h1>
           <p>
-            Soluções sob medida para usar IA onde ela realmente melhora custo, velocidade e qualidade. Da revisão de fluxos baseados em LLMs à criação de modelos e automações com dados reais.
+            A HyperPlane AI transforma dados, processos e LLMs em soluções aplicáveis com mais precisão, menor custo operacional e decisões melhores para empresas que precisam sair do improviso sem perder velocidade.
           </p>
           <div className="hero-actions">
             <a className="primary-button" href={whatsappUrl} target="_blank" rel="noreferrer">
-              Começar conversa
+              Começar diagnóstico
               <ArrowRight size={18} />
             </a>
             <a className="secondary-button" href={`tel:${phoneNumber}`}>
@@ -98,28 +91,12 @@ function App() {
             </a>
           </div>
         </div>
-        <div className="hero-visual" aria-label="Visualização abstrata de modelos de IA e dados conectados">
-          <div className="plane-card intelligence-card">
-            <span>Quality</span>
-            <strong>+ precisão</strong>
-          </div>
-          <div className="plane-card speed-card">
-            <span>Latency</span>
-            <strong>- tempo</strong>
-          </div>
-          <div className="model-orbit">
-            <span className="orbit-node node-one" />
-            <span className="orbit-node node-two" />
-            <span className="orbit-node node-three" />
-            <div className="core-model">AI</div>
-          </div>
-        </div>
       </section>
 
       <section id="solutions" className="solutions-section">
         <div className="section-heading">
           <span>Soluções</span>
-          <h2>Engenharia de IA para operações que precisam sair do improviso</h2>
+          <h2>Engenharia de IA para negócios que precisam de resultado mensurável.</h2>
         </div>
         <div className="service-grid">
           {services.map((service) => {
@@ -141,7 +118,7 @@ function App() {
           <span>Método</span>
           <h2>Menos força bruta, mais inteligência aplicada.</h2>
           <p>
-            A HyperPlane AI combina diagnóstico, modelagem e otimização para substituir uso indiscriminado de LLMs por soluções mais rápidas, baratas e consistentes.
+            Combinamos diagnóstico, modelagem e otimização para substituir uso indiscriminado de LLMs por soluções mais rápidas, baratas e consistentes.
           </p>
         </div>
         <div className="step-list">
@@ -156,23 +133,23 @@ function App() {
 
       <section className="proof-section" aria-label="Benefícios principais">
         <div>
-          <strong>Entrega orientada a ROI</strong>
-          <p>Priorização técnica conectada ao impacto no negócio.</p>
+          <strong>ROI antes de hype</strong>
+          <p>Priorização técnica conectada ao impacto real no negócio.</p>
+        </div>
+        <div>
+          <strong>Arquitetura no tamanho certo</strong>
+          <p>LLMs, automações e modelos clássicos escolhidos por necessidade, não por moda.</p>
         </div>
         <div>
           <strong>Qualidade mensurável</strong>
-          <p>Critérios claros para comparar antes e depois.</p>
-        </div>
-        <div>
-          <strong>Arquitetura pragmática</strong>
-          <p>Modelos, integrações e automações no tamanho certo.</p>
+          <p>Critérios claros para comparar custo, velocidade e precisão antes e depois.</p>
         </div>
       </section>
 
       <section id="contact" className="contact-section">
         <div className="contact-copy">
           <span>Contato</span>
-          <h2>Conte seu desafio e retornaremos com o melhor próximo passo.</h2>
+          <h2>Conte seu desafio e receba um próximo passo claro.</h2>
           <p>Você também pode falar diretamente por telefone, WhatsApp ou e-mail.</p>
           <div className="contact-links">
             <a href={`tel:${phoneNumber}`}>
@@ -203,7 +180,7 @@ function App() {
           </label>
           <label>
             E-mail
-            <input name="E-mail" type="email" placeholder="voce@empresa.com" required />
+            <input name="E-mail" type="email" placeholder="suaempresa@empresa.com" required />
           </label>
           <label>
             Telefone
@@ -214,7 +191,7 @@ function App() {
             <textarea name="Desafio" placeholder="Onde você quer aplicar ou melhorar IA/ML?" rows={5} required />
           </label>
           <button className="submit-button" type="submit">
-            Enviar lead por e-mail
+            Enviar mensagem
             <Check size={18} />
           </button>
         </form>

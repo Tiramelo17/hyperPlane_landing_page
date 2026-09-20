@@ -1,0 +1,8 @@
+{
+	"chat.tools.terminal.autoApprove": {
+		"/^mkdir -p public/brand && cp /home/gabriel/Área\\\\ de\\\\ trabalho/hyperplane_ai/logo\\.jpeg public/brand/logo\\.jpeg && cp /home/gabriel/Área\\\\ de\\\\ trabalho/hyperplane_ai/1_post_1\\.jpeg public/brand/1_post_1\\.jpeg && cp /home/gabriel/Área\\\\ de\\\\ trabalho/hyperplane_ai/1_post_4\\.png public/brand/1_post_4\\.png && cp /home/gabriel/Área\\\\ de\\\\ trabalho/hyperplane_ai/2_post_1\\.jpeg public/brand/2_post_1\\.jpeg && cp /home/gabriel/Área\\\\ de\\\\ trabalho/hyperplane_ai/2_post_2\\.jpeg public/brand/2_post_2\\.jpeg && cp /home/gabriel/Área\\\\ de\\\\ trabalho/hyperplane_ai/3_post_1\\.jpeg public/brand/3_post_1\\.jpeg && cp /home/gabriel/Área\\\\ de\\\\ trabalho/hyperplane_ai/storie_lead_2\\.png public/brand/storie_lead_2\\.png && ls -lh public/brand$/": {
+			"approve": true,
+			"matchCommandLine": true
+		}
+	}
+}
